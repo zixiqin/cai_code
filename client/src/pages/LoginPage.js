@@ -37,6 +37,7 @@ function App(props) {
       props.history.push('/customer',{
         position:[lat, lng],
         vendors: vendors
+
       });
     }
     

@@ -40,6 +40,7 @@ function Header(props) {
               vendors: props.vendors,
               position: props.center,
               vendor: props.vendor,
+              password: password
             });
             setShow(false);
           }else{
@@ -49,7 +50,6 @@ function Header(props) {
           console.log(error)
           })
       }
-    
     const onLogout = () => {
         history.push(props.path,{
             vendors: props.vendors,
@@ -61,6 +61,7 @@ function Header(props) {
     const onProfile = () => {
         history.push('/profile',{
             customer: props.customer,
+            password: props.password
         })
     }
 
