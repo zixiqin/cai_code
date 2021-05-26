@@ -57,6 +57,7 @@ function App(props) {
 
     const onVendorLogin = () => {
       axios.post("/vendor/login", {userName: userName, password: password}).then(response => {
+        console.log(userName)
         if(response.data.success){
           //传递本页信息到下一页
           message.success("Logged in successfully!!")
