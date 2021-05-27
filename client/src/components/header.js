@@ -33,8 +33,9 @@ function Header(props) {
 
     const onLogin = () => {
         axios.post("/customer/login", {email: email, password: password}).then(response => {
-          if(response.data.success){
+            if(response.data.success){
             //传递本页信息到下一页
+            console.log(props)
               history.push(props.path, {
               customer : response.data.customer,
               vendors: props.vendors,
