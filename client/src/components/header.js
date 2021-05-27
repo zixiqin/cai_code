@@ -85,7 +85,7 @@ function Header(props) {
         else{
             setTitle("Welcome to LE Sillage")
             setBottons([<Nav class="justify-content-end">
-                            <Button variant="outline-light" size = "lg" onClick = {handleShow}>Login</Button>
+                            {/* <Button variant="outline-light" size = "lg" onClick = {handleShow}>Login</Button> */}
                         </Nav>])
 
         }

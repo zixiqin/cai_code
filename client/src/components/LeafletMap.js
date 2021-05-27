@@ -73,15 +73,12 @@ export default function LeafletMap(props) {
     )
     
     const renderVendorMarker = (
-        // <Marker
-        // draggable = {true}
-        // eventHandlers = {eventHandlers}
-        // position = {position}>
-        // </Marker>
-        <p>aaaa</p>
-        
-
-        
+        <Marker
+        draggable = {true}
+        eventHandlers = {eventHandlers}
+        position = {position}>
+        </Marker>
+    
     )
         return (
         <>
@@ -108,7 +105,6 @@ export default function LeafletMap(props) {
             </Modal.Footer>
             </Modal>
 
-            
             <MapContainer 
             center={props.center} zoom={18} scrollWheelZoom={false} style={{height: "90vh"}}>
                 <TileLayer
